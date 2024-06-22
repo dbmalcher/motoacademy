@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <table>
-        <th>
-        
-        </th>
-        <tbody>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabela</title>
+    </head>
+
+    <body>
+        <table border="3px">
+            <!--Table segue a msm estrutura de arquivo html com thead e tbody ao invés de head e body-->
+
+            <!--th existe mas é uma tag dentro da row de head-->
+            <!--O atributo scope é usado para definir se o escopo do th ou td é coluna ou linha-->
+            <thead>
+                <tr>
+                    <th colspan="2">Título 1</th>
+                    <th>Título 2</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Conteúdo 1</td>
+                    <td>Conteúdo 2</td>
+                    <td>Conteúdo 3</td>
+                </tr>
+                <tr>
+                    <td>Conteúdo 1</td>
+                    <td>Conteúdo 2</td>
+                    <td>Conteúdo 3</td>
+                </tr>
+                <tr>
+                    <td>Conteúdo 1</td>
+                    <td>Conteúdo 2</td>
+                    <td>Conteúdo 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br> 
+
+        <table border="3px">
             <tr>
-                <td>
-
-                </td>
-                <td>
-
-                </td>
+                <th scope="col" colspan="2">Título 1</th>
+                <th scope="col">Título 2</th>
             </tr>
-        </tbody>
-    </table>
-</body>
+            <tr>
+                <td>Conteúdo 1</td>
+                <td>Conteúdo 2</td>
+                <td>Conteúdo 3</td>
+            </tr>
+            <tr>
+                <td>Conteúdo 1</td>
+                <td>Conteúdo 2</td>
+                <td>Conteúdo 3</td>
+            </tr>
+            <tr>
+                <td>Conteúdo 1</td>
+                <td>Conteúdo 2</td>
+                <td>Conteúdo 3</td>
+            </tr>
+        </table>
+    </body>
+
 </html>
