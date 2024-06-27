@@ -1,0 +1,20 @@
+.paragrafo{
+    background-color: lightpink;
+    margin: 8px;
+    padding: 16px;
+}
+
+#paragrafo-id {
+    background-color: lightsalmon;
+    margin: 8px;
+    padding: 16px;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+h1 {
+    color:mediumorchid;
+    font-size: 48px;
+}

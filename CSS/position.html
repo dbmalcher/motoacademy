@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<body>
+    <h2>Position: Relative</h2>
+    
+    <div style="width: 125px; height: 150px; border: 5px solid red;">
+        <div class="relative">
+            Lorem ipsum
+        </div>
+    </div>
+
+    <h2 class="fixed">Position: Fixed</h2>
+
+    <div class="fixed">
+        Esse elemento está fixed
+    </div>
+
+    <h2>Position: Absolute</h2>
+
+    <div class="relative-absolute">
+        <div class="absolute">
+            Essa div é absolute
+        </div>
+    </div>
+
+    <style>
+        .relative{
+            position: relative;
+            margin: 8px;
+            padding: 8px;
+            left: 30px;
+            background-color: black;
+            color: white;
+        }
+
+        .fixed{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border: 3px solid salmon;
+        }
+
+        .absolute{
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            border: 3px solid seagreen;
+        }
+
+        .relative-absolute{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid sandybrown;
+        }
+    </style>
+</body>
+</html>
