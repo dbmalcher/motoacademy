@@ -1,0 +1,14 @@
+.paragrafo{
+    color: deeppink;
+    background-color: bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    padding: 16px;
+    text-transform: capitalize; 
+}
+
+.paragrafo-titulo{
+    color: indigo;
+    font-size: 50px;
+    text-transform: uppercase;
+}

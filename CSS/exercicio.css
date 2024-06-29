@@ -1,0 +1,16 @@
+.paragrafo{
+    border: 1px solid green;
+}
+
+.paragrafo-primeira-parte{
+    text-transform: uppercase;
+    color: red;
+    font-size: 30px;
+}
+
+.paragrafo-segunda-parte{
+    text-transform: lowercase;
+    color: blue;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
