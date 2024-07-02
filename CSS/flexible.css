@@ -1,0 +1,54 @@
+h1{
+    color: coral;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 16px 0px 16px 0px;
+}
+
+.container{
+    background-color: antiquewhite;
+    padding: 16px;
+    zoom: 1;
+}
+
+.container-75{
+    width: 75%;
+}
+
+.container-50{
+    width: 50%;
+}
+
+section{
+    padding: 8px;
+    background-color: peachpuff;
+    text-align: center;
+    float: left;
+    width: 63.1%;
+}
+
+aside{
+    padding: 8px;
+    background-color: palevioletred;
+    text-align: center;
+    float: right;
+    width: 29.3%;
+}
+
+.container,section,aside{
+    border-radius: 30px;
+}
+
+.container:before,
+.container:after{
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear:both;
+}
+
+.container:hover{
+    cursor:pointer;
+}
