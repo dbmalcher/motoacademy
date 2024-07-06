@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <style>
+        h4{
+            padding: 16px 16px 16px 16px;
+        }
+        .sidenav{
+            background-color:aliceblue;
+            height: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .row.content{
+            height: 100vh;
+        }
+
+        .input-group{
+            padding: 0px 16px 0px 16px;
+        }
+        
+        a{
+            border-radius: 0 !important;
+        }
+
+        a:hover{
+            background-color: rgb(189, 219, 245) !important;
+            color: white !important;
+        }
+    </style>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>John's Blog</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active">
+                        <a href="#section1">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#section2">Friends</a>
+                    </li>
+
+                    <li>
+                        <a href="#section3">Family</a>
+                    </li>
+
+                    <li>
+                        <a href="#section4">Photos</a>
+                    </li>
+                </ul>
+                
+                <br>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search">
+
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-9" >
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+
+                <h2>I love food</h2>
+                <h5> <span class="glyphicon glyphicon-time"></span> Post by John Doe, July 5th 2024</h5>
+                <h5>
+                    <span class="label label-danger">Food</span>
+                    <span class="label label-primary">Ipsum</span>
+                </h5>
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis commodi cum eos, eveniet minus omnis. Maxime, quidem cumque reiciendis eos error omnis porro consequuntur voluptatem libero ratione officiis magnam! Dolorum ipsam omnis, perspiciatis fuga esse aperiam earum minus maxime! Doloremque omnis dicta maxime ipsum animi aperiam vitae, accusantium voluptatem voluptatum placeat inventore saepe dolor exercitationem debitis quia laudantium quo fuga ipsam suscipit ex esse earum. Atque odit laborum ut aliquam incidunt ipsam error nesciunt vitae cum quibusdam, suscipit eos consequatur eligendi earum adipisci dolorem perspiciatis facere praesentium expedita sapiente doloremque, reiciendis mollitia? Necessitatibus, suscipit? Quisquam rem nesciunt aliquid omnis quae! Neque est odit iste optio nihil voluptatem officia animi ipsum eius in corrupti fugit illum mollitia, deserunt ex perspiciatis quidem explicabo atque hic labore! Perferendis doloremque nulla aspernatur! Saepe cumque ipsam eveniet veritatis, molestias, placeat iure aperiam non sint vel dolorem ullam mollitia explicabo? Iste, cumque hic. Maiores, nostrum cupiditate.
+                </p>
+
+                <br><br>
+
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+
+                <h2>Officially Blogging</h2>
+                <h5> <span class="glyphicon glyphicon-time"></span> Post by John Doe, July 5th 2024</h5>
+                <h5>
+                    <span class="label label-success">Blogging</span>
+                </h5>
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis commodi cum eos, eveniet minus omnis. Maxime, quidem cumque reiciendis eos error omnis porro consequuntur voluptatem libero ratione officiis magnam! Dolorum ipsam omnis, perspiciatis fuga esse aperiam earum minus maxime! Doloremque omnis dicta maxime ipsum animi aperiam vitae, accusantium voluptatem voluptatum placeat inventore saepe dolor exercitationem debitis quia laudantium quo fuga ipsam suscipit ex esse earum. Atque odit laborum ut aliquam incidunt ipsam error nesciunt vitae cum quibusdam, suscipit eos consequatur eligendi earum adipisci dolorem perspiciatis facere praesentium expedita sapiente doloremque, reiciendis mollitia? Necessitatibus, suscipit? Quisquam rem nesciunt aliquid omnis quae! Neque est odit iste optio nihil voluptatem officia animi ipsum eius in corrupti fugit illum mollitia, deserunt ex perspiciatis quidem explicabo atque hic labore! Perferendis doloremque nulla aspernatur! Saepe cumque ipsam eveniet veritatis, molestias, placeat iure aperiam non sint vel dolorem ullam mollitia explicabo? Iste, cumque hic. Maiores, nostrum cupiditate.
+                </p>
+
+                <br><br>
+                
+                <h4>Leave a comment</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3">
+                        </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Publish</button>
+                </form>
+                
+                <br><br>
+
+                <p><span class="badge">2</span> Comments:</p>
+
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img src="cat.png" class="img-circle" height="65" width="65" alt="avatar">
+                    </div>
+
+                    <div class="col-sm-10">
+                        <h4>John Doe <small>July 5th 2024</small></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam qui culpa ullam id? Id, adipisci cupiditate sint perspiciatis, ipsa nulla repudiandae veniam libero sapiente vel, aperiam distinctio fugit saepe facere quibusdam illum obcaecati earum? Voluptate deleniti, aut possimus laborum odio vero recusandae ut? Quaerat, enim dolores. Illo fugiat cum a necessitatibus facilis sed voluptatibus, consequuntur assumenda quam voluptas enim animi vel totam maxime optio voluptatum expedita deserunt eligendi laborum beatae. Enim provident ipsam, voluptatibus facere eum, aspernatur adipisci fuga quae laborum consequuntur saepe porro delectus quos veritatis eveniet, esse consequatur earum assumenda! Accusantium voluptatum provident omnis fugiat, corrupti, repellendus tempora fugit ea quas nobis nesciunt cumque sapiente nisi at, eaque fuga qui expedita earum similique quae? Aliquid commodi ab laborum dolore unde ad eius, praesentium atque facere ex ipsum laboriosam nihil est vitae iste tenetur harum ipsam inventore facilis eaque! Porro ea illum alias. Beatae quis minus porro laudantium optio nemo qui culpa aliquam quam quia. Possimus laboriosam repellat ipsum sed tenetur distinctio adipisci eum illum nam asperiores laudantium, omnis deserunt nihil officia ea. Deserunt quo nisi dolores deleniti?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
