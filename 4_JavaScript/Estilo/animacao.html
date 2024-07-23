@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+            position: relative;
+            margin: 8px;
+        }
+    </style>
+
+    <div id="box"></div>
+    <button id="animateButton">Animar</button>
+
+    <script>
+        document.getElementById('animateButton').addEventListener('click', () => {
+            const divBox = document.getElementById('box');
+            let position = 0;
+
+            const interval = setInterval(frame,10); //chama a função a cada x milisegundos até encontrar o clearInterval(intervalo)
+            
+            function frame() {
+                if(position == 350){
+                    clearInterval(interval);
+                }else{
+                    position++
+                    divBox.style.top = position + 'px'
+                    divBox.style.left = position + 'px'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

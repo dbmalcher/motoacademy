@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mudarCorBotao">
+        Botão
+    </button>
+
+    <script>
+        document.getElementById('mudarCorBotao').addEventListener('click', () =>{
+            if(document.body.style.backgroundColor !== 'plum'){
+                document.body.style.backgroundColor = 'plum'
+            } else {
+                document.body.style.backgroundColor = 'coral'
+            }
+        })
+    </script>
+
+    <p id="paragrafo">Mudar cor desse brother</p>
+    <button id="mudarParagrafoBotao">Mudar</button>
+
+    <script>
+        document.getElementById('mudarParagrafoBotao').addEventListener('click', () =>{
+            const paragrafo = document.getElementById('paragrafo');
+            
+            paragrafo.style.color = 'aqua'
+            paragrafo.style.fontSize='50px'
+            paragrafo.style.fontWeight = 'bold'
+        })
+    </script>
+</body>
+</html>
