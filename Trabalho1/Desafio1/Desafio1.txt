@@ -1,0 +1,7 @@
+Consumir API da VIACEP
+Nenhum framework :(
+Com Bootstrap
+O que vai na pagina
+    -descrição do que é a página
+    -campo pra colocar cep 
+    -campo de retorno do VIACEP

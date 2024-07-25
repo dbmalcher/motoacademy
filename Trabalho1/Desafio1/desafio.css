@@ -1,0 +1,20 @@
+#cep{
+    background-color:antiquewhite;
+}
+
+.card{
+    padding: 32px;
+    margin: 64px 128px 64px 128px;
+    height: 100%;
+    width: auto;
+    box-shadow: 10px 5px 5px rgb(211, 211, 211);
+    background: white;
+}
+
+button{
+    font-weight: bold;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
