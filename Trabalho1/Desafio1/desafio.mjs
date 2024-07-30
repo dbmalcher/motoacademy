@@ -7,11 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault()
         
         //função de tratamento do cep vem aqui
-        checkCEP(userInput);
+        const isCepValid = checkCEP(userInput);
         
-        const url = "https://viacep.com.br/ws/" + userInput + "/json/"
-
-        getData(url, result);
+        if(isCepValid){
+            const url = "https://viacep.com.br/ws/" + userInput + "/json/"
+    
+            getData(url, result);
+        } else {
+            console.log("cep errado")
+        }
     })
 })
 
