@@ -44,9 +44,10 @@ async function getData(url, result) {
 }
 
 function checkCEP(cep){
-    if(cep.length != 11){
+    if(cep.length != 8){
         return false
+    } else {
+        return true
     }
-    return isNaN(cep)
 }
   
