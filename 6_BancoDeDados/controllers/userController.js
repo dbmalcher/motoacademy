@@ -1,8 +1,8 @@
 const userService = require('../services/userServices.js');
 
-function getUsers(req, res){
+async function getUsers(req, res){
     try{
-        const users = userService.getAllUsers();
+        const users = await userService.getAllUsers();
         res.status(200).json(users);
     } catch(error){
 
@@ -10,21 +10,37 @@ function getUsers(req, res){
 }
 
 async function createUser(req,res) {
-    const {nome, idade} = req.body
+    const {id, nome, idade, email, senha} = req.body
 
     try{
-        await userService.createUser(nome, idade);
-        res.stats(201).send({message: "usuário criado"})
+        await userService.createUser(id, nome, idade, email, senha);
+        res.status(201).send({message: "usuário criado"})
     } catch(error){
 
     }
 }
 
-function updateUser(){
-
+async function updateUser(req, res){
+    const {id} = req.params;
+    const {nome} = req.body;
+    try{
+        await userService.updateUser(id, nome)
+        res.status(200).json({message:"Alteração feita com sucesso"})
+    }catch(error){
+        console.log(error)
+        res.status(500).json({message: "Erro ao atualizar o usuário"})
+    }
 }
-function deleteUser() {
 
+async function deleteUser(req,res) {
+    const {id} = req.params;
+
+    try{
+        await userService.deleteUser(id);
+        res.status(204).json({message: "Ele foi morto"});
+    } catch(error){
+
+    }
 }
 
 module.exports = {getUsers, createUser, updateUser, deleteUser}
