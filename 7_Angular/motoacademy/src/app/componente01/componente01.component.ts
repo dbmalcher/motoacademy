@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-componente01',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './componente01.component.html',
   styleUrl: './componente01.component.css'
 })
@@ -18,6 +19,7 @@ export class Componente01Component {
   }
 
   mudaNome(){
+    this.isActive = false
     if(this.name === this.nameAlt){
       this.name = this.nameDefault
     }else {
@@ -25,5 +27,11 @@ export class Componente01Component {
     }
   }
 
-  imagem: string = "../cachorro.jpg"
+  imagem: string = "./app/assets/cachorro.jpg"
+
+  isDisabled: boolean = false
+
+  isActive: boolean = true
+
+
 }

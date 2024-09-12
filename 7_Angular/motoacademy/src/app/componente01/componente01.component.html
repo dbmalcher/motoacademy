@@ -3,3 +3,8 @@
 <button (click)="mudaNome()">BUTÃO</button>
 
 <p><img [src]="imagem"></p>
+
+<button
+  type="button"
+  [disabled]="isDisabled"
+  (click)="mudaNome()" *ngIf="isActive"> TriggerButton </button>
